@@ -1,0 +1,135 @@
+ /* Layout For CodePen */
+
+  
+  h1 {
+  color: #222;
+  text-align:center;}
+
+  img {height:auto;
+  width: auto;
+  opacity: 100%;
+color: white;}
+  
+  
+   /* The Grid */
+  
+  .grid {
+    width: 100%;
+    height: auto;
+    display: table;
+    border-spacing: 15px;}
+  
+  .grid-row {
+    width: 100%;
+    height: auto;
+    display: table;
+    table-layout: fixed;
+    margin:0 0 -20px 0;
+  text-align: center;}
+  
+
+  .title {font-size: 200%;
+    font-weight: 700;
+    color: rgb(38, 37, 37);
+    text-align: center;
+    display: table-cell;
+    background: rgb(208, 184, 209);
+    margin: 0;
+    padding: 0;
+    height: auto;}
+
+  .item {font-size: 125%;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    display: table-cell;
+    background: #e84485;
+    margin: 0;
+    padding: 0;
+    height: auto;}
+  
+  /*SOME ISSUES
+
+  NOTE: THERE ARE ONLY IMAGES FOR THE HALLOWEEN SECTION
+
+  - GETTING PICTURES TO APPEAR
+  - CENTERING TEXT VERTICALLY AND HORIZONTALLY
+  - GRAY HOVER EFFECT STICK ON CLICK*/
+  
+
+  /*HALLOWEEN CRITTERS FORMATTING*/
+  .hallow {display: table-cell;
+    background: black;
+    opacity: .75;
+    height: 85px;
+    width: 85px;}
+
+  #halloween{background-color: rgb(255, 98, 0);
+  font-size: 200%;
+  color: black;}
+
+/*RARITY ROWS FORMATTING ---- FOR GROUND, FLYING, SCUTTLING CRITTERS PLUS TINY, MIDDLING, HUGE FISH*/
+
+  .common {display: table-cell;
+    background: orange;
+    height: 85px;
+    width: 85px;}
+  
+  .rare {display: table-cell;
+    background: blue;
+    height: 85px;
+    width: 85px;}
+  
+  .uncommon {display: table-cell;
+    background: lightgreen;
+    height: 85px;
+    width: 85px;}
+  
+  .legendary {display: table-cell;
+    background: gold;
+    height: 85px;
+    width: 85px;}
+  
+  .mythical {display: table-cell;
+    background: lightblue;
+    height: 85px;
+    width: 85px;}
+
+  #spring, #spring1, #spring2{background-color: lightgreen;}
+
+  #summer, #summer1, #summer2{background-color:gold;}
+
+  #fall, #fall1, #fall2{background-color: rgb(223, 141, 64);}
+
+  #winter, #winter1, #winter2 {background-color: rgba(70, 70, 247, 0.705);}
+  
+/* CATRGORIES FOR SHELL TYPES*/
+
+  .rough, .smooth, .sparkling, .glowing, .crystal {display: table-cell;
+    background: purple;
+    height: 85px;
+    width: 85px;}
+
+    /*HOVER EFFECT FOR ALL OF THE BOXES*/
+    .hallow:hover, .common:hover, .rare:hover, .uncommon:hover, .legendary:hover, .mythical:hover, .rough:hover, .smooth:hover, .sparkling:hover, .glowing:hover, .crystal:hover {background-color: lightgray;} /*I WANT JS TO MAKE THE HOVER STAY ON CLICK*/
+  
+
+
+
+
+  
+  /*MEDIA QUERIES*/
+  @media screen and (max-width: 480px) {
+  
+   .grid-row {
+      display: block;
+      width: 100%;
+      margin:0;}
+    
+   .item {
+    display: block;
+      width: 100%;
+    margin: 0 0 5px 0;}  
+   
+  }
+  
